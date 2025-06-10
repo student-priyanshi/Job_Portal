@@ -1,10 +1,10 @@
-import React, { useContext, useState } from "react";
-import { Context } from "../../main";
-import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useContext, useState } from "react";
 import toast from "react-hot-toast";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai"; // Import the close icon
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Link, useNavigate } from "react-router-dom";
+import { Context } from "../../main";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);

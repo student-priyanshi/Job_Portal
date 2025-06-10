@@ -1,19 +1,19 @@
-import React, { useContext } from 'react'
-import {Context} from "../../main"
-import {Link} from "react-router-dom"
-import { FaGithub , FaLinkedin} from "react-icons/fa"
+import { useContext } from 'react';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
-import { RiInstagramFill} from "react-icons/ri"
+import { Link } from "react-router-dom";
+import { Context } from "../../main";
 function Footer() {
   const {isAuthorized}  = useContext(Context)
   return (
     <footer className= {isAuthorized ? "footerShow" : "footerHide"}>
-<div>&copy; All Rights Reserved by Abhishek.</div>
+<div>&copy; All Rights Reserved by Priyanshi.</div>
 <div>
-  <Link to={'https://github.com/exclusiveabhi'} target='github'><FaGithub></FaGithub></Link>
-  <Link to={'https://leetcode.com/u/exclusiveabhi/'} target='leetcode'><SiLeetcode></SiLeetcode></Link>
-  <Link to={'https://www.linkedin.com/in/abhishek-rajput-/'} target='linkedin'><FaLinkedin></FaLinkedin></Link>
-  <Link to={'https://www.instagram.com/exclusiveabhi/'} target='instagram'><RiInstagramFill></RiInstagramFill></Link>
+  <Link to={''} target='github'><FaGithub></FaGithub></Link>
+  <Link to={''} target='leetcode'><SiLeetcode></SiLeetcode></Link>
+  <Link to={'www.linkedin.com/in/priyanshi-yadav-7082372a5'} target='linkedin'><FaLinkedin></FaLinkedin></Link>
+  <Link to={''} target='instagram'><RiInstagramFill></RiInstagramFill></Link>
 </div>
       
     </footer>
